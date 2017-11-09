@@ -53,9 +53,8 @@ func NewBool() *Bool {
 func (__obj *Bool) Bool_ToJson() ([]byte, error) {
 	if _jsn, _err := jsn.Marshal(__obj); _err != nil {
 		return nil, _err
-	} else {
-		return []byte(fmt.Sprintf(_BOOL_FMT, string(_jsn))), nil
-	}
+	} 
+	return []byte(fmt.Sprintf(_BOOL_FMT, string(_jsn))), nil
 }
 
 //
