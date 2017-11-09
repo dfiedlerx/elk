@@ -103,9 +103,8 @@ func (__obj *ElkQuery) SourceControl(__source Source) (*ElkQuery, error) {
 	if _rsc, _err := jsn.Marshal(__source); _err != nil {
 		__obj.Source = _rsc
 		return __obj, _err
-	} else {
-		return __obj, nil
-	}
+	} 
+	return __obj, nil
 
 }
 
